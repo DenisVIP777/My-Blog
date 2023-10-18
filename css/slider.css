@@ -1,0 +1,113 @@
+/*Слайдер*/
+.slick-slider{
+
+}
+/*Ограничивающая оболочка*/
+.slick-list{
+	overflow: hidden;
+    padding: 0px 0px;
+}
+/*Лента слайдов*/
+.slick-track{
+    
+}
+
+/*Слайд*/
+.slick-slide{}
+/*Слайд активный*/
+.slick-slide.slick-active{}
+/*Слайд основной*/
+.slick-slide.slick-current{}
+/*Слайд по цунтру*/
+.slick-slide.slick-center{}
+
+/*Стрелка*/
+.slick-arrow{}
+/*Стрелка влево*/
+.slick-arrow.slick-prev{}
+/*Стрелка вправо*/
+.slick-arrow.slick-next{}
+/*Стрелка не активная*/
+.slick-arrow.slick-disabled{}
+
+/*Точки*/
+.slick-dots{}
+.slick-dots li{}
+.slick-dots button{}
+
+
+
+
+
+.slider .slick-track{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 1fr;
+}
+.slider .slider_item {
+	padding: 32px 116px 25px 32px;
+    padding: 31px 115px 24px 31px;
+    border: 1px solid transparent;
+}
+.slider .slider_item:hover {
+	border: 1px solid #c3c3c3a4;
+    border-radius: 10px;
+    
+}
+.slider .slider_item:hover {
+    cursor: pointer;
+}
+@media screen and (max-width: 450px){
+    .slider .slider_item {
+        padding: 30px 10px;
+    }
+}
+.slider .slick-current{
+    background: #FBF6EA;
+}
+
+.sliderbig .slick-track{
+    display: flex;
+}
+.sliderbig .slick-list{
+    
+}
+
+
+
+
+.slider_testimonials{
+    position: relative;
+}
+.slider_testimonials .slick-track{
+    display: flex;
+    overflow: hidden;
+}
+.slider_testimonials .slick-arrow {
+	position: absolute;
+    bottom: 0px;
+    z-index: 10;
+    font-size: 0;
+    border-radius: 0px;
+    border: 0px solid #000;
+    
+}
+.slider_testimonials .slick-arrow.slick-prev {
+	right: 86px;
+    width: 48px;
+    height: 48px;
+    bottom: 6px;
+    background: url(../images/back_button.png) 0px 0px / 100% no-repeat;
+}
+.slider_testimonials .slick-arrow.slick-next {
+	right: 0;
+    width: 62px;
+    height: 62px;
+    background: url(../images/next_button.png) 0px 0px / 100% no-repeat;
+}
+.slider_testimonials .slider_item:hover {
+    cursor: pointer;
+}
+.slider_testimonials .slick-current{
+    background: #FBF6EA;
+}
